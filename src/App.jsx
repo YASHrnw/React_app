@@ -1,6 +1,8 @@
 import './App.css'
-import Form from './Componets/Form'
-// import ObjForm2 from './ObjForm2'
+import PropDriling from './Componets/PropDriling'
+// import Form from './Componets/Form'
+// import Array from './Project/Array'
+// import ObjForm2 from '.Componets/ObjForm2'
 
 
 
@@ -9,9 +11,13 @@ import Form from './Componets/Form'
 function App() {
   return (
     <>
+
       {/* <ObjForm2/> */}
-      <Form/>
- 
+      {/* <Form/> */}
+      {/* <Array /> */}
+      <PropDriling/>
+
+
 
 
 

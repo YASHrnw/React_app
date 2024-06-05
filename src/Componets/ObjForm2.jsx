@@ -1,6 +1,5 @@
 
-// import React, { useState } from 'react'
-
+// import { useState } from 'react'
 // export default function ObjForm2() {
 
 //   const [obj, setobj] = useState({
@@ -104,4 +103,3 @@
 // }
 
 
-  
