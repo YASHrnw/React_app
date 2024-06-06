@@ -1,7 +1,12 @@
 import './App.css'
+// Project
+
+import Es6Array from './Project/Es6Array'
 import CalcClass from './Project/CalcClass'
 import Counter from './Project/Counter'
-import Es6Array from './Project/Es6Array'
+
+
+
 
 // import PropDriling from './Componets/PropDriling'
 // import Form from './Componets/Form'
@@ -15,18 +20,19 @@ import Es6Array from './Project/Es6Array'
 function App() {
   return (
     <>
+      {/* //Asssinment? */}
+      <Es6Array />
+      <CalcClass />
+      <Counter />
+
+
+
+
 
       {/* <ObjForm2/> */}
       {/* <Form/> */}
       {/* <Array /> */}
       {/* <PropDriling/> */}
-      <Es6Array />
-      <CalcClass />
-      <Counter/>
-
-
-
-
 
 
 
@@ -36,3 +42,8 @@ function App() {
 }
 
 export default App
+
+
+
+
+

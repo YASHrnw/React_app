@@ -11,7 +11,7 @@ let m2 = [11, 22, 33, 44, 55]
 const Student = {
     name: 'yash',
     age: 20,
-    marks: 55
+
 }
 
 let count = {};
