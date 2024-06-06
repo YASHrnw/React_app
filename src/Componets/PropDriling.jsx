@@ -1,28 +1,32 @@
-import { createContext } from "react";
-import ChildA from "./ChildA";
+// import { createContext } from "react";
+// import ChildA from "./ChildA";
 
-const data = createContext();
-const data1 = createContext()
+// const data = createContext();
+// const data1 = createContext()
 
-export default function PropDriling() {
+// export default function PropDriling() {
 
-    const name = "iron man";
-    const movie = "caption marvel "
+//     const name = "iron man";
+//     const movie = "caption marvel "
 
-    return (
+//     return (
 
-        <div>
+//         <div>
 
-            <data.Provider value={name}>
-                <data1.Provider value={movie}>
-                    <ChildA />
+//             <data.Provider value={name}>
+//                 <data1.Provider value={movie}>
+//                     <ChildA />
 
-                </data1.Provider>
-            </data.Provider>
+//                 </data1.Provider>
+//             </data.Provider>
 
-        </div>
+//         </div>
 
-    );
-}
+//     );
+// }
 
-export { data, data1 };
+// export { data, data1 };
+
+
+
+
