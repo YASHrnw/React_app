@@ -23,7 +23,7 @@ function SideBar() {
                 <Offcanvas.Body>
                   <button> <a href="#home">HOME</a></button> <br /> <br />
                   <button> <a href="#home">CONTECT US</a></button> <br /> <br />
-                  <button> <a href="#home">SERVICEUS</a></button> <br /> <br />
+                  <button> <a href="#home">SERVICES</a></button> <br /> <br />
                   <button> <a href="#home"> HELP</a></button> 
                 </Offcanvas.Body>
             </Offcanvas>
