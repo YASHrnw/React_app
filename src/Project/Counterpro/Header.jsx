@@ -13,7 +13,7 @@ export default function Header() {
 
                         <h1>Metizsoft Solutions</h1>
                           <ul>
-                            <li>home</li>
+                            <li>Home</li>
                             <li>Contect Us</li>
                             <li>Features</li>
                           </ul>

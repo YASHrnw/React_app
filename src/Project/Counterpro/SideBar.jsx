@@ -13,7 +13,7 @@ function SideBar() {
          <div className='sidebar'>
 
         <  Button variant="primary" className='button1' onClick={handleShow}>
-                manu
+                menu
             </Button>
 
             <Offcanvas show={show} onHide={handleClose} backdrop="static">
@@ -23,8 +23,7 @@ function SideBar() {
                 <Offcanvas.Body>
                   <button> <a href="#home">HOME</a></button> <br /> <br />
                   <button> <a href="#home">CONTECT US</a></button> <br /> <br />
-                  <button> <a href="#home">CONTECT US</a></button> <br /> <br />
-                  <button> <a href="#home">SERVICE US</a></button> <br /> <br />
+                  <button> <a href="#home">SERVICEUS</a></button> <br /> <br />
                   <button> <a href="#home"> HELP</a></button> 
                 </Offcanvas.Body>
             </Offcanvas>

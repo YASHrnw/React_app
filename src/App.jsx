@@ -1,27 +1,17 @@
 // import './App.css';
 
-
-
-
 //Counterpro
-import Content from './Project/Counterpro/Content';
-import Footer from './Project/Counterpro/Footer';
-import Header from './Project/Counterpro/Header';
-import Sidebar from './Project/Counterpro/SideBar';
+// import Content from './Project/Counterpro/Content';
+// import Footer from './Project/Counterpro/Footer';
+// import Header from './Project/Counterpro/Header';
+// import Sidebar from './Project/Counterpro/SideBar';
 import "bootstrap/dist/css/bootstrap.min.css"
-
-
-
-
-
-
-
 
 // Array
 // import Es6Array from './Project/Array/Es6Array'
 // import CalcClass from './Project/Array/CalcClass'
 // import Counter from './Project/Array/Counter'
-// import Event from './Project/event/Event'
+import Event from './Project/event/Event'
 // import PropDriling from './Componets/PropDriling'
 // import Form from './Componets/Form'
 // import Array from './Project/Array'
@@ -40,12 +30,12 @@ function App() {
       <Counter /> */}
 
 
-      <Header />
+      {/* <Header />
       <Sidebar />
       <Footer />
-      <Content />
+      <Content /> */}
 
-      {/* <Event/> */}
+      <Event/>
 
 
 
