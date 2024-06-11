@@ -4,10 +4,10 @@
 
 
 //Counterpro
-import Content from './Counterpro/Content';
-import Footer from './Counterpro/Footer';
-import Header from './Counterpro/Header';
-import Sidebar from './Counterpro/SideBar';
+import Content from './Project/Counterpro/Content';
+import Footer from './Project/Counterpro/Footer';
+import Header from './Project/Counterpro/Header';
+import Sidebar from './Project/Counterpro/SideBar';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
@@ -46,7 +46,7 @@ function App() {
       <Content />
 
       {/* <Event/> */}
-  
+
 
 
 
