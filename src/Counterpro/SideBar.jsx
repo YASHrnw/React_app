@@ -1,42 +1,39 @@
-// import  { useState } from 'react';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const Sidebar = () => {
-    // const [counter, setCounter] = useState(5);
+function SideBar() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-      
-    
-                <>
-                 <div className="sider_bar"></div>
-                    <p>
-                        <button
-                            className="btn btn-primary"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseWidthExample"
-                            aria-expanded="false"
-                            aria-controls="collapseWidthExample"
-                        >
-                            Toggle width collapse
-                        </button>
-                    </p>
-                    <div style={{ minHeight: 120 }}>
-                        <div className="collapse collapse-horizontal" id="collapseWidthExample">
-                            <div className="card card-body" style={{ width: 300 }}>
-                                <ul>
-                                    <h5>Menu</h5>
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Contect</li>
-                                    <li>Help</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </>
+        <>
+         <div className='sidebar'>
+
+        <  Button variant="primary" className='button1' onClick={handleShow}>
+                manu
+            </Button>
+
+            <Offcanvas show={show} onHide={handleClose} backdrop="static">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>SideBar</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <button> <a href="#home">HOME</a></button> <br /> <br />
+                  <button> <a href="#home">CONTECT US</a></button> <br /> <br />
+                  <button> <a href="#home">CONTECT US</a></button> <br /> <br />
+                  <button> <a href="#home">SERVICE US</a></button> <br /> <br />
+                  <button> <a href="#home"> HELP</a></button> 
+                </Offcanvas.Body>
+            </Offcanvas>
 
 
-    
+        </div>
+           
+        </>
     );
 }
 
-export default Sidebar;
+export default SideBar;

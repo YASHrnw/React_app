@@ -8,7 +8,6 @@ import Content from './Counterpro/Content';
 import Footer from './Counterpro/Footer';
 import Header from './Counterpro/Header';
 import Sidebar from './Counterpro/SideBar';
-
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
@@ -47,7 +46,7 @@ function App() {
       <Content />
 
       {/* <Event/> */}
-
+  
 
 
 
