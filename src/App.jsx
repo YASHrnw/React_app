@@ -1,11 +1,13 @@
-// import './App.css';
+import './App.css';
 
 //Counterpro
-import Content from './Projects/Counterpro/Content';
-import Footer from './Projects/Counterpro/Footer';
-import Header from './Projects/Counterpro/Header';
-import Sidebar from './Projects/Counterpro/SideBar';
+// import Content from './Projects/Counterpro/Content';
+// import Footer from './Projects/Counterpro/Footer';
+// import Header from './Projects/Counterpro/Header';
+// import Sidebar from './Projects/Counterpro/SideBar';
 import "bootstrap/dist/css/bootstrap.min.css"
+import OnChangeTextFun from "./Projects/Array/OnChangeTextClass"
+import Onchange from './Projects/Array/Onchange';
 
 // Array
 // import Es6Array from './Projects/Array/Es6Array'
@@ -21,19 +23,23 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
+
 function App() {
   return (
     <>
+
+    <OnChangeTextFun/>
+    <Onchange/>
       {/* //Asssinment? */}
       {/* <Es6Array />
       <CalcClass />
       <Counter /> */}
 
 
-      <Header />
+      {/* <Header />
       <Sidebar />
       <Footer />
-      <Content />
+      <Content /> */}
 
       {/* <Event/> */}
 
