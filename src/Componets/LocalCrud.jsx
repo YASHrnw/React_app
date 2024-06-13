@@ -53,13 +53,13 @@ export default function LocalCrud() {
             </form>
 
             {
-                <table border={2}  cellSpacing={10} >
+                <table border={2} cellSpacing={10} >
                     <thead >
                         <tr>
                             <th>SR NO</th>
                             <th>Name</th>
                             <th>Password</th>
-                           
+
                         </tr>
                     </thead>
 
