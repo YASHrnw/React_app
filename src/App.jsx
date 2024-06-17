@@ -21,13 +21,14 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // import PropDriling from './Componets/PropDriling'
 // import Form from './Componets/Form'
 // import ObjForm2 from '.Componets/ObjForm2'
-// import LocalCrud from './Componets/LocalCrud'
+import LocalCrud from './Componets/LocalCrud'
 
 
 
 
 
-
+//*********************************************************************************** */
+import Xyz from './Prectice/Xyz'
 
 
 function App() {
@@ -57,8 +58,7 @@ function App() {
       {/* <Form/> */}
       {/* <Array /> */}
       {/* <PropDriling/> */}
-      {/* <LocalCrud /> */}
-
+      <LocalCrud />
 
 
 
@@ -69,7 +69,7 @@ function App() {
 
 
       {/* ****************************************************Prectice*************************** */}
-
+      {/* <Xyz /> */}
 
     </>
   )

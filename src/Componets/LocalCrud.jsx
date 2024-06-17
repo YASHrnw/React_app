@@ -13,7 +13,11 @@ export default function LocalCrud() {
     const [inputvalue, setInputvalue] = useState({
         name: "",
         password: ""
+
     });
+
+
+    const [edit, setEdit] = useState(null); // Define the edit state
 
     const handleinput = (e) => {
         const { name, value } = e.target;
@@ -42,6 +46,35 @@ export default function LocalCrud() {
         localStorage.setItem("Data", JSON.stringify(iteam))
     }, [iteam])
 
+
+    //Delete
+    const handelDelete = (index) => {
+        const updateData = [...iteam];
+        updateData.splice(index, 1);
+        setitem(updateData)
+    }
+
+    //Edit
+    const handelEdit = (index) => {
+        setEdit(index);
+        setInputvalue(iteam[index]);
+    };
+
+
+
+    //updata
+    const handelSaveData = () => {
+        const updateData = [...iteam]
+        updateData[edit] = inputvalue
+        setitem(updateData)
+        setInputvalue({ name: "", password: "" })
+        setEdit(null);
+    }
+
+
+
+
+
     return (
         <>
             <form action="">
@@ -49,14 +82,21 @@ export default function LocalCrud() {
                 <input type="text" placeholder="Enter Name" name="name" value={inputvalue.name} onChange={handleinput} /><br /><br />
                 <input type="password" placeholder="Enter password" name="password" value={inputvalue.password} onChange={handleinput} /><br /><br />
 
-                <button onClick={handlAddData}>Add Data</button>
-            </form>
+                {edit === null ? (
+
+                    <button onClick={handlAddData}>Add</button>
+                ) : (
+                    <button onClick={handelSaveData}>Update</button>
+                )}
+
+
+            </form><br />
 
             {
-                <table border={2} cellSpacing={10} >
+                <table border={2} cellSpacing={6}   >
                     <thead >
                         <tr>
-                            <th>SR NO</th>
+                            <th>SRNO</th>
                             <th>Name</th>
                             <th>Password</th>
 
@@ -70,6 +110,12 @@ export default function LocalCrud() {
                                     <td>{index + 1}</td>
                                     <td>{item.name}</td>
                                     <td>{item.password}</td>
+                                    <td>
+
+                                        <button onClick={() => handelEdit(index)}>Edit</button>
+                                        {" "}
+                                        <button onClick={() => handelDelete(index)}>Delete</button>
+                                    </td>
                                 </tr>
                             );
                         })}
