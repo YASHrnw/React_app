@@ -1,17 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function BT_Crude() {
+
+    const [iteam, setItems] = useState([])
+
 
     const [inputvalue, setInputvalue] = useState({
         username: "",
         password: ""
     })
 
-    const handelinput = (e) => {
+
+
+    const handleInput = (e) => {
         const { name, value } = e.target;
         setInputvalue({ ...inputvalue, [name]: value })
 
     }
+
+
+
+
+
     const handelData = (e) => {
         e.preventDefault();
 
@@ -24,15 +34,19 @@ export default function BT_Crude() {
         } else if (inputvalue.password.length < 8) {
             alert("please Enter the password More then 7 characters")
         } else {
-            // setitem([...iteam, inputvalue])
+            setItems([...iteam, inputvalue])
             console.log(inputvalue);
         }
 
     }
+
+
+
+
     return (
         <>
-            <form onSubmit={handelData}>
-                <div className="mb-3">
+            <form >
+                <div className="mb-3"  >
                     <label htmlFor="exampleInputEmail1" className="form-label">
                         UserName
                     </label>
@@ -40,10 +54,10 @@ export default function BT_Crude() {
                         type="text"
                         name='username'
                         value={inputvalue.username}
-                        onChange={handelinput}
+                        onChange={handleInput}
 
                         className="form-control"
-                      
+
 
                     />
 
@@ -56,14 +70,14 @@ export default function BT_Crude() {
                         type="password"
                         name='password'
                         value={inputvalue.password}
-                        onChange={handelinput}
+                        onChange={handleInput}
 
                         className="form-control"
 
                     />
                 </div>
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary" onClick={handelData}>
                     Submit
                 </button>
             </form>
