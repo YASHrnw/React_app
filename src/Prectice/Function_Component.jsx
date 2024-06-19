@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-export default function Xyz() {
+export default function Function_Component() {
 
     const [data, setdata] = useState("yash")
-    
+
     console.warn("___________");
 
     function updateData() {

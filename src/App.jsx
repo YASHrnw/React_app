@@ -23,13 +23,17 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // import ObjForm2 from '.Componets/ObjForm2'
 // import LocalCrud from './Componets/LocalCrud'
 // import LocalCrud2 from './Componets/LocalCrud2';
-import BT_Crude from './Componets/BT_Crude';
+// import BT_Crude from './Componets/BT_Crude';
 
 
 
 
 //*********************************************************************************** */
-// import Xyz from './Prectice/Xyz'
+// import Function_Component from './Prectice/Function_Component'
+// import Class_Component from './Prectice/Class_Component';
+import Props_Funcation from './Prectice/Props_Funcation';
+
+
 
 
 
@@ -62,7 +66,7 @@ function App() {
       {/* <PropDriling/> */}
       {/* <LocalCrud /> */}
       {/* <LocalCrud2 /> */}
-      <BT_Crude/>
+      {/* <BT_Crude/> */}
 
 
 
@@ -73,7 +77,13 @@ function App() {
 
 
       {/* ****************************************************Prectice*************************** */}
-      {/* <Xyz /> */}
+      {/* <Function_Component /> */}
+      {/* <Class_Component /> */}
+      {/* <Props_Funcation name={"yash"} /> */}
+
+
+     
+
 
     </>
   )

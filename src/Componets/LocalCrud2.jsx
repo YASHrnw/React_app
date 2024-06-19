@@ -16,6 +16,7 @@ export default function LocalCrud2() {
 
     };
 
+    
 
     const handleAdd = (e) => {
         e.preventDefault();
