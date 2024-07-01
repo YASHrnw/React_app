@@ -1,11 +1,11 @@
 import './App.css';
 
+import "bootstrap/dist/css/bootstrap.min.css"
 //Counterpro
 // import Header from './Projects/Counterpro/Header';
 // import Footer from './Projects/Counterpro/Footer';
 // import Sidebar from './Projects/Counterpro/SideBar';
 // import Content from './Projects/Counterpro/Content';
-import "bootstrap/dist/css/bootstrap.min.css"
 
 
 // Array
@@ -24,6 +24,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // import LocalCrud from './Componets/LocalCrud'
 // import LocalCrud2 from './Componets/LocalCrud2';
 // import BT_Crude from './Componets/BT_Crude';
+import Localstorage_crud_operation from './Componets/Localstorage_crud_operation';
 
 
 
@@ -31,7 +32,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 //*********************************************************************************** */
 // import Function_Component from './Prectice/Function_Component'
 // import Class_Component from './Prectice/Class_Component';
-import Props_Funcation from './Prectice/Props_Funcation';
+// import Props_Funcation from './Prectice/Props_Funcation';
 
 
 
@@ -67,6 +68,7 @@ function App() {
       {/* <LocalCrud /> */}
       {/* <LocalCrud2 /> */}
       {/* <BT_Crude/> */}
+      <Localstorage_crud_operation />
 
 
 
@@ -82,7 +84,7 @@ function App() {
       {/* <Props_Funcation name={"yash"} /> */}
 
 
-     
+
 
 
     </>
